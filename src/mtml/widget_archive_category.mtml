@@ -1,0 +1,8 @@
+			<mt:IfArchiveTypeEnabled archive_type="Category">
+			<h3>Categories</h3>
+			<mt:TopLevelCategories>
+			<mt:SubCatIsFirst><ul class="navigation"></mt:SubCatIsFirst>
+				<li class="<mt:CategoryBasename lower_case="1"/>"><mt:If tag="CategoryCount"><a href="<mt:CategoryArchiveLink/>"<mt:If tag="CategoryDescription"> title="<mt:CategoryDescription/>"</mt:If>><mt:CategoryLabel/></a><mt:Else><mt:CategoryLabel/></mt:If><mt:SubCatsRecurse/></li>
+			<mt:SubCatIsLast></ul></mt:SubCatIsLast>
+			</mt:TopLevelCategories>
+			</mt:IfArchiveTypeEnabled>

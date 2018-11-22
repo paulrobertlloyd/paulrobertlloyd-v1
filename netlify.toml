@@ -1,0 +1,53 @@
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Content-Type = "image/x-icon"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "text/javascript; charset=utf-8"
+
+# Favicon
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/_gfx/favicon.ico"
+  status = 200
+
+# RSS feed
+[[redirects]]
+  from = "/feed"
+  to = "/_xml/entries.xml"
+  status = 200
+
+# Rewrite entry discussion URL
+[[redirects]]
+  from = "/:year/:month/:slug/discuss/*"
+  to = "/:year/:month/:slug_discussion.html"
+  status = 200
+
+# CGI scripts have gone
+[[redirects]]
+  from = "/cgi-bin/*"
+  to = "/410.html"
+  status = 410
+
+[[redirects]]
+  from = "/tags/*"
+  to = "/410.html"
+  status = 410
+
+[[redirects]]
+  from = "/tags/"
+  to = "/tags/"
+  status = 200

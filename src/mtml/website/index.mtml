@@ -1,0 +1,50 @@
+<mt:BlogParentWebsite><mt:WebsiteID setvar="website_id"/></mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<mt:Link template="rsd"/>"/>
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://paulrobertlloyd.myopenid.com/" />
+    <title><mt:BlogParentWebsite><mt:WebsiteName/></mt:BlogParentWebsite></title>
+</head>
+
+<mt:Include module="Header" section="home" blog_id="$website_id"/>
+
+    <div id="article" class="hfeed">
+        <div class="section">
+            <mt:Entries lastn="1" include_blogs="children">
+            <div class="hentry" id="entry-<mt:EntryID/>">
+                <h1 class="entry-title"><a href="<mt:EntryPermalink replace=".php",""/>" rel="bookmark"><mt:EntryTitle smarty_pants="1" widont="1" encode_ampersands="1"/></a></h1>
+                <ul class="entry-meta">
+                    <li><abbr class="published" title="<mt:EntryDate format_name="iso8601"/>"><mt:EntryDate format="%e %B %Y"/></abbr></li>
+                    <mt:IfCommentsActive><li class="entry-remarks"><a href="<mt:EntryPermalink replace=".php",""/>/discuss"><mt:EntryCommentCount singular="1 Remark" plural="# Remarks" none="No Remarks"/></a></li></mt:IfCommentsActive>
+                    <li class="entry-canonical"><a rel="shortlink" href="http://prlloyd.com/e/<mt:EntryID/>" title="Short URL for this entry">http://prlloyd.com/e/<mt:EntryID/></a></li>
+                </ul>
+                <div class="entry-content">
+                    <mt:EntryBody smarty_pants="1" widont="1" encode_ampersands="1"/>
+                    <mt:EntryIfExtended><p class="entry-more"><a href="<mt:EntryPermalink replace=".php",""/>#more">Continue Reading &#8216;<mt:EntryTitle smarty_pants="1" encode_ampersands="1"/>&#8217;</a> &#8594;</p></mt:EntryIfExtended>
+                 </div>
+            </div>
+
+<!--/.hentry-->
+            </mt:Entries>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#article-->
+
+    <div id="aside">
+        <div class="section">
+            <ul class="hfeed">
+                <mt:Entries offset="1" lastn="6" include_blogs="children"><mt:Include module="Entry Summary" blog_id="$website_id"/></mt:Entries>
+            </ul>
+            <p><a href="/archive/">View Full Archive</a> &#8594;</p>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#aside-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

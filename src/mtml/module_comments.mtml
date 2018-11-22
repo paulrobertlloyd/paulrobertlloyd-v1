@@ -1,0 +1,69 @@
+<mt:IfCommentsActive>
+
+
+<mt:Comments>
+<mt:CommentsHeader></mt:CommentsHeader>
+
+<div id="remark-<mt:CommentID/>" class="remark">
+<div class="comment">
+<mt:CommentBody/>
+</div>
+<p class="commentator">
+<img class="gravatar" src="<mt:Gravatar default="http://paulrobertlloyd.com/_gfx/gravatar.gif" size="25"/>" alt="<mt:CommentAuthor/>&#39;s Gravatar"/>
+<strong><mt:CommentAuthorLink/></strong>
+<abbr class="published" title="<mt:CommentDate format_name="iso8601"/>"><mt:CommentDate format="%e %b %Y"/><br/><mt:CommentDate format="%l:%M %p"/></abbr>
+</p>
+</div>
+</mt:Comments>
+
+<mt:IfCommentsAccepted>
+<h2 id="add-remarks">Add Your Remarks</h2>
+<p id="comment-greeting"></p>
+
+<form method="post" action="<mt:CGIPath/><mt:CommentScript/>" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
+<fieldset>
+<input type="hidden" name="static" value="1"/>
+<input type="hidden" name="entry_id" value="<mt:EntryID/>"/>
+<input type="hidden" name="__lang" value="<mt:BlogLanguage/>"/>
+<input type="hidden" name="armor" value="1"/>
+<input type="hidden" name="preview" value=""/>
+<input type="hidden" name="sid" value=""/>
+<div id="comments-open-data">
+<div id="comment-form-name">
+<label for="comment-author">Name</label>
+<input id="comment-author" class="text" name="author" size="30" value=""/>
+<em>Required</em>
+</div>
+<div id="comment-form-email">
+<label for="comment-email">Email Address</label>
+<input id="comment-email" class="text" name="email" size="30" value=""/>
+<em>Required but not published</em>
+</div>
+<div id="comment-form-url">
+<label for="comment-url">Website</label>
+<input id="comment-url" class="text" name="url" size="30" value=""/>
+</div>
+<div id="comment-form-remember-me">
+<label for="comment-bake-cookie" class="check"><input class="checkbox" type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1"/> Remember my personal information</label>
+</div>
+</div>
+<div id="comments-open-text">
+<label for="comment-text">Remarks</label>
+<textarea id="comment-text" name="text" rows="8" cols="48"></textarea>
+<mt:IfAllowCommentHTML><em class="clear">You may use <abbr title="HyperText Markup Language">HTML</abbr> tags for style</em></mt:IfAllowCommentHTML>
+</div>
+<div id="comments-open-footer" class="submit">
+<input id="comment-preview" class="button submit" type="submit" name="preview_button" value="Preview" onclick="this.form.preview.value='1';"/>
+<input id="comment-submit" class="button" type="submit" name="post" value="Post Remark"/>
+</div>
+</fieldset>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+mtAttachEvent("load", mtEntryOnLoad);
+mtAttachEvent("unload", mtEntryOnUnload);
+/* ]]> */
+</script>
+</mt:IfCommentsAccepted>
+
+</mt:IfCommentsActive>

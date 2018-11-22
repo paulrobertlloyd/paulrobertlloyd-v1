@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="<mt:PublishCharset/>"?>
+<OpenSearchDescription
+xmlns="http://a9.com/-/spec/opensearch/1.1/"
+xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+
+    <ShortName><mt:BlogName remove_html="1" encode_xml="1" trim_to="16"/></ShortName>
+    <LongName><mt:BlogName remove_html="1" encode_xml="1"/></LongName>
+    <Description><mt:BlogDescription remove_html="1" encode_xml="1" trim_to="1024"/></Description>
+    <Contact>noreply@paulrobertlloyd.com</Contact>
+    <Url type="application/atom+xml" template="<mt:CGIPath/><mt:SearchScript/>?search={searchTerms}&amp;Template=opensearch"/>
+    <Url type="application/opensearchdescription+xml" rel="self" template="<mt:BlogURL/>_xml/opensearchdescription.xml" />
+    <Url type="text/html" template="<mt:CGIPath/><mt:SearchScript/>?search={searchTerms}"/>
+    <Image height="16" width="16" type="image/x-icon"><mt:BlogURL/>_gfx/favicon.ico</Image>
+</OpenSearchDescription>

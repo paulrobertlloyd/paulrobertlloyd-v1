@@ -1,0 +1,30 @@
+About The Author
+================
+
+  By Paul Robert Lloyd
+  <http://paulrobertlloyd.com/about/>  
+  Saturday, 6 November 2010
+
+Hello! My name is Paul, and I'm a Graphic Designer specialising in visual interface design, information architecture and HTML programming. In addition to my love of all things design, I have a growing passion for travel, and an interest in British and American politics.
+
+<img class="right" src="/_gfx/about/me.jpg" alt="Photo of Paul Robert Lloyd" width="168" height="162" />
+
+I grew up in the South East of England, and laterly the Midlands, before studying Graphic Design at Cumbria Institute of the Arts between 1999-2002.  In 2004 I joined Orange Vision, a small web marketing agency in Lichfield, where I advocated the companies adoption of web standards and accessible design practices.
+
+2006 saw me move to the United States to take on the Lead Designer role at <a href="http://ning.com/">Ning</a>, a start-up based in Palo Alto, California. My design direction and standards guidance for it's social web applications, helped the company become host to the largest number of social networks on the Internet.
+
+As Baz Luhrmann sang, you should live in Northern California once, but leave before it makes you soft, so in 2008 I returned to the UK and embarked on my most ambitious project yet, taking the plunge into the world of freelancing, working with clients such as [nGenera Corporation][ngen], [Apture][apt], [Gumtree][gum] and the [Mozilla Add-ons][amo] team.
+
+  [ngen]: http://www.ngenera.com/
+  [apt]: http://www.apture.com/
+  [gum]: http://www.gumtree.com/
+  [amo]: http://addons.mozilla.org/
+
+In June 2009, I joined the Brighton based web agency [Clearleft][cl] as a Visual Designer.
+
+  [cl]: http://clearleft.com/
+
+<!--p class="linkedin icon"><a href="http://linkedin.com/in/paulrobertlloyd">View My Resume on LinkedIn</a></p-->
+
+<p class="caption">Photo by <a href="http://www.flickr.com/photos/adactio/3686154881/">Jeremy Keith</a></p>
+

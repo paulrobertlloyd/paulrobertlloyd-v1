@@ -1,0 +1,10 @@
+<li class="hentry" id="entry-<mt:EntryID/>">
+<h2 class="entry-title"><a href="<mt:EntryPermalink replace=".php",""/>" rel="bookmark"><mt:If tag="PageTitle"><mt:FolderLabel/>: </mt:If><mt:EntryTitle encode_html="1" smarty_pants="1" widont="1"/></a></h2>
+<ul class="entry-meta">
+<mt:If tag="PageTitle"><li class="folder"><span><mt:ParentFolder><mt:FolderLabel/></mt:ParentFolder></span></li><mt:Else><li><abbr class="published" title="<mt:EntryDate format_name="iso8601"/>"><mt:EntryDate format="%e %b %Y"/></abbr></li></mt:If>
+</ul>
+<div>
+<p class="entry-summary"><mt:If tag="EntryExcerpt"><mt:EntryExcerpt encode_html="1" smarty_pants="1" widont="1"/><mt:Else><em>No Summary Provided</em></mt:If></p>
+<mt:Ignore><mt:IfCommentsActive><p class="entry-remarks"><a href="<mt:EntryPermalink replace=".php",""/>/discuss"><mt:EntryCommentCount singular="1 Remark" plural="# Remarks" none="No Remarks"/></a></p></mt:IfCommentsActive></mt:Ignore>
+</div>
+</li>

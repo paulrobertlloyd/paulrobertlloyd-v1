@@ -1,0 +1,59 @@
+Colophon
+========
+
+  By Paul Robert Lloyd
+  <http://paulrobertlloyd.com/about/colophon>  
+  Thursday, 2 December 2010
+
+This site is built using a variety of third-party tools and services.
+
+It was produced using an Apple [MacBook Pro][mbp], with [Fireworks][fw] used to realise early design concepts and ideas, before then being marked up as HTML in [Dreamweaver][dw].  I use and recommend [(mt) Media Temple][mt] for web hosting.
+
+  [mbp]: http://apple.com/macbookpro/
+  [fw]: http://adobe.com/products/fireworks/
+  [dw]: http://adobe.com/products/dreamweaver/
+  [mt]: http://mediatemple.net/
+
+Entries, articles and supporting pages for this site are published using the [Movable Type 4][mt4] publishing platform, alongside a number of supporting plugins:
+
+  * [Markdown][md] and [SmartyPants][sp] by John Gruber
+  * [FlickrPhotos][fp] by Marc Carey
+  * [Fire Eagle Plugin][fe] by Ben Trott
+  * [Action Streams][as] by Mark Paschal
+  * [Gravatar][g] by Automattic
+  * [MT-Regex][reg] by Brad Choate
+
+  [mt4]: http://movabletype.org/
+  [md]: http://daringfireball.net/projects/markdown/
+  [sp]: http://daringfireball.net/projects/smartypants/
+  [fp]: http://mt-hacks.com/flickrphotos.html
+  [fe]: http://plugins.movabletype.org/fire-eagle-for-movable-type/
+  [as]: http://plugins.movabletype.org/action-streams/
+  [g]: http://en.gravatar.com/site/implement/movabletype
+  [reg]: http://bradchoate.com/weblog/2003/06/24/regular-expressions
+
+I have also referenced the following articles:
+
+  * [Compose to a Vertical Rhythm][vr] and [Web Typography][wt] by Richard Rutter
+  * [Font Stacks][fs] by Unit Interactive
+  * [Awesompersands][amp] by Patrick Haney
+  * [Ghost in the Machine Tags][mtag] by Jeremy Keith
+
+  [vr]: http://24ways.org/2006/compose-to-a-vertical-rhythm
+  [wt]: http://www.webtypography.net/
+  [fs]: http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
+  [amp]: http://patrickhaney.com/thinktank/2008/08/19/automatic-awesompersands
+  [mtag]: http://adactio.com/journal/1274/
+
+I always try to adhere to [Web Standards][wasp] and best practices. As such, HTML markup should validate as [HTML 5][html], visual design is provided using valid [CSS][css], and the syndicated feed is valid RSS.  Behaviour and effects are programmed using the [JQuery][jq] JavaScript framework, and an extra layer of semanticism is available thanks to [Microformats][mf].
+
+  [wasp]: http://webstandards.org/
+  [html]: http://www.w3.org/TR/html5/
+  [css]: http://www.w3.org/TR/CSS21/
+  [jq]: http://jquery.com/
+  [mf]: http://microformats.org/
+
+Stats are tracked with [Mint][m].
+
+  [m]: http://haveamint.com/
+

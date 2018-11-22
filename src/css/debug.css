@@ -1,0 +1,24 @@
+/* --------------------------------------------------
+	Shifting Fury Debug Styles
+	
+	Author:	Paul Lloyd
+	Date:	May 2008
+-------------------------------------------------- */
+body {
+	background-color:transparent;
+	background-image:url(_gfx/baseline-grid.png);
+	background-repeat:repeat;
+	background-position:-6px 0;
+	background-attachment:scroll;
+}
+body * {
+	background:none!important;
+}
+
+h1, h2, h3, h4, h5, h6,
+legend, caption,
+p, ul, ol, dl, address, table, fieldset,
+ul li, dl dt, dl dd,
+img, object {
+	background:url(_gfx/baseline-item.png) repeat!important;
+}

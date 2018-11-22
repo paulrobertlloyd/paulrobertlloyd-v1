@@ -1,0 +1,22 @@
+<mt:BlogParentWebsite><mt:WebsiteID setvar="website_id"/></mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+    <title>Page Not Found &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" blog_id="$website_id"/>
+
+    <div id="article">
+        <div class="section">
+            <h1>Page Not Found</h1>
+            <p class="lede">The page you have requested wasn&#8216;t found in the location specified. You may have an incorrect URL, or the file may have been moved or renamed.</p>
+            <p>If your having problems finding a particular page, try searching the site using the search box below, or return to the <a href="/">homepage</a>.</p>
+            <p class="caption">Error Returned: 404</p>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

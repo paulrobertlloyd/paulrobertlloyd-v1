@@ -1,0 +1,92 @@
+<mt:BlogParentWebsite> 
+    <mt:WebsiteID setvar="website_id"/> 
+</mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<title>Search Results &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" blog_id="$website_id"/>
+
+<div id="article">
+<div class="section">
+<mt:SetVarTemplate id="search_results" name="search_results">  
+<mt:SearchResults>
+<mt:SearchResultsHeader>
+<mt:IfStraightSearch>
+<h1>Search Results</h1>
+<p class="lede">Results matching <em>&#8216;<mt:SearchString/>&#8217;</em></p>
+<!--form method="get" action="<mt:CGIPath/><mt:SearchScript/>">
+<fieldset>
+<input type="hidden" name="IncludeBlogs" value="<mt:SearchIncludeBlogs/>"/>
+<input type="hidden" name="limit" value="<mt:SearchMaxResults/>"/>
+<input id="search_again" name="search" class="text search" type="text" value="<mt:SearchString/>"/>
+<input class="button" type="submit" value="Search Again"/>
+</fieldset>
+</form-->
+</mt:IfStraightSearch>
+<mt:IfTagSearch>
+<div class="breadcrumb">
+<a href="/archive/">Archive</a> / <a href="/tags/">Tags</a>
+</div>
+<h1><mt:SearchString/></h1>
+</mt:IfTagSearch>
+</mt:SearchResultsHeader>
+
+<ul class="hfeed">
+<mt:Include module="Entry Summary" blog_id="$website_id"/>
+</ul>
+
+<mt:SearchResultsFooter>
+<mt:IfTagSearch>
+<!--
+<h2>Related Photos on Flickr</h2>
+<div class="thumbnails">
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=7&display=latest&size=s&layout=x&source=user_tag&user=40543580%40N05&tag=<mt:SearchString/>"></script>
+<p class="caption">You can view a number of <a href="http://www.flickr.com/photos/paulrobertlloyd/tags/<mt:SearchString/>">photos related to this tag</a> on Flickr.</p>
+</div>
+-->
+</mt:IfTagSearch>
+<ul class="pagination">
+<mt:IfPreviousResults>
+<li class="prev"><a href="<mt:PreviousLink/>" rel="prev">Previous</a></li>
+</mt:IfPreviousResults>
+<mt:PagerBlock>
+<mt:IfCurrentPage><li class="active"><$mt:Var name="__value__"$></li><mt:Else><li><a href="<mt:PagerLink/>"><$mt:Var name="__value__"$></a></li></mt:IfCurrentPage>
+</mt:PagerBlock>
+<mt:IfMoreResults>
+<li class="next"><a href="<mt:NextLink/>" rel="next">Next</a></li>
+</mt:IfMoreResults>
+</ul>
+</mt:SearchResultsFooter>
+</mt:SearchResults>
+</mt:SetVarTemplate>
+
+<mt:Var name="search_results"/>
+
+<mt:NoSearchResults>
+<h1>Results <mt:IfStraightSearch>matching</mt:IfStraightSearch><mt:IfTagSearch>tagged</mt:IfTagSearch> <em>&#8216;<mt:SearchString/>&#8217;</em></h1>
+<p>No results found for &#8216;<mt:SearchString/>&#8217;</p>
+</mt:NoSearchResults>
+
+<mt:NoSearch>
+<h1>Search</h1>
+<h2>Instructions</h2>
+<p>
+By default, this search engine looks for all words in any order. To search for an exact phrase, enclose the phrase in quotes:<br/>
+<code>"movable type"</code>
+</p>
+<p>
+The search engine also supports AND, OR, and NOT keywords to specify boolean expressions:<br/>
+<code>personal OR publishing</code><br/>
+<code>publishing NOT personal</code>
+</p>
+</mt:NoSearch>
+
+</div>
+
+<!--/.section-->
+</div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

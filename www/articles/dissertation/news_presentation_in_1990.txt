@@ -1,0 +1,74 @@
+News Presentation in 1990
+=========================
+
+  By Paul Robert Lloyd
+  <http://paulrobertlloyd.com/articles/dissertation/news_presentation_in_1990>  
+  Thursday, 2 December 2010
+
+The computer techniques introduced during the eighties also made a strong impact on the graphics used within televised news.
+
+By the early nineties comedy shows such as _'The Day Today'_ made light of this, with heavily computer generated animated titles with clichéd images of globes, eyes, similar urgent sounding music <abbr title="et cetera">etc</abbr>. This wasn't far from the truth as both <abbr title="Independent Television News">ITN</abbr> (who provided news for the commerical channels) and the <abbr>BBC</abbr> were using such material.
+
+The <abbr>BBC</abbr>'s Breakfast News had titles involving a globe at the centre of a clock face which turned back on itself before the 'C' in <abbr>BBC</abbr> spun out and around the globe, all to the music of horns and chimes. Similar themes were expressed later it's One O'clock news programme. Later bulletins at six and nine had much heavier music, but still carried images of globes and maps of the world. ([Figure 23](#fig23))
+
+As for <abbr>ITN</abbr>, these images were used much less, preferring to use purely computer animated sequences involving the programme titles or in the case of News at Ten, a computer rendered London skyline before closing in on the familiar clock face of Big Ben. ([Figure 24](#fig24))
+
+However both the <abbr>BBC</abbr> and <abbr>ITN</abbr> started their bulletins in exactly the same manor -- their large initials being placed centre screen before launching into their respective animations, presumably as an	indication of authority.
+
+<div class="figure divide" id="fig23">
+	<div class="sidenote">
+		<h4><em>Figure 23</em> &#160; How the <abbr>BBC</abbr>'s bulletins looked at the beginning of the ninetees.</h4>
+	</div>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23a.png" width="112" height="84" alt="BBC Breakfast News titles, 1989" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23b.png" width="112" height="84" alt="BBC Breakfast News titles, 1989" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23c.png" width="112" height="84" alt="BBC Breakfast News titles, 1989" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig23d.png" width="112" height="84" alt="" />
+	<p class="caption">&#9650; <abbr>BBC</abbr> Breakfast News</p>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23e.png" width="112" height="84" alt="BBC One O'Clock News titles, 1986" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23f.png" width="112" height="84" alt="BBC One O'Clock News titles, 1986" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23g.png" width="112" height="84" alt="BBC One O'Clock News titles, 1986" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig23h.png" width="112" height="84" alt="" />
+	<p class="caption">&#9650; <abbr>BBC</abbr> One O'Clock News</p>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23i.png" width="112" height="84" alt="BBC Six O'Clock News titles, 1984" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23j.png" width="112" height="84" alt="BBC Six O'Clock News titles, 1984" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig23k.png" width="112" height="84" alt="BBC Six O'Clock News titles, 1984" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig23l.png" width="112" height="84" alt="" />
+	<p class="caption">&#9650; <abbr>BBC</abbr> Six O'Clock News</p>
+</div>
+
+<div class="figure divide" id="fig24">
+	<div class="sidenote">
+		<h4><em>Figure 24</em> &#160; <abbr>ITN</abbr>'s bulletins relied heavily on computer animated sequences.</h4>
+	</div>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig24a.png" width="112" height="84" alt="ITN News at 12:30, 1989" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig24b.png" width="112" height="84" alt="ITN News at 12:30, 1989" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig24c.png" width="112" height="84" alt="ITN News at 12:30, 1989" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig24d.png" width="112" height="84" alt="ITN News at 12:30, 1989" />
+	<p class="caption">&#9650; <abbr>ITN</abbr> News at 12:30</p>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig24e.png" width="112" height="84" alt="ITN News at Ten, 1988" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig24f.png" width="112" height="84" alt="ITN News at Ten, 1988" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig24g.png" width="112" height="84" alt="ITN News at Ten, 1988" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig24h.png" width="112" height="84" alt="ITN News at Ten, 1988" />
+	<p class="caption">&#9650; <abbr>ITN</abbr> News at Ten</p>
+</div>
+
+The first real change to come to this clichéd and computer orientated world was again in the habitual shape of Martin Lambie-Nairn, who produced new titles for the <abbr>BBC</abbr>'s Nine O'clock News in 1988. These were based on a range of graphical elements with long-standing <abbr>BBC</abbr> associations such as the figure Jupiter from its coat of arms.
+
+  > Conceptually, we attempted to communicate an idea of how a news programme actually functions: disparate information comes in, is collected, ordered then broadcast.
+
+<cite>Lambie-Nairn, 1997, p119</cite>
+
+This resulted in a dark, yet subtly colourful animation featured lightning bolts and strong geometric lines and shapes criss-crossing the screen, before ending with radiating concentric rings beaming out from a mast, reminiscent of old newsreel footage. However Lambie-Nairn had no control over the music that was used, and again a traditional and urgent sounding score only served to emphasise the harsher aspects of the animation.
+
+<div class="figure divide" id="fig25">
+	<div class="sidenote">
+		<h4><em>Figure 25</em> &#160; <abbr>BBC</abbr> Nine O'Clock News</h4>
+	</div>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig25a.png" width="237" height="183" alt="" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig25b.png" width="112" height="84" alt="" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig25c.png" width="112" height="84" alt="" /> 
+	<img class="photo left" src="/_gfx/articles/dissertation/fig25d.png" width="112" height="84" alt="" /> 
+	<img class="photo" src="/_gfx/articles/dissertation/fig25e.png" width="112" height="84" alt="" />
+	<p class="caption">&#9650; The look of <abbr>BBC</abbr>'s Nine O'clock News was unlike anything seen before.</p>
+</div>
+

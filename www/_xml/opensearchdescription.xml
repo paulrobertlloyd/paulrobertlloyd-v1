@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Paul Robert Lloy</ShortName>
+  <LongName>Paul Robert Lloyd</LongName>
+  <Description>Paul Robert Lloyd is a Graphic Designer working with emerging technology start-ups, and delivering beautiful visual interface design, information architecture, HTML and CSS.</Description>
+  <Contact>noreply@paulrobertlloyd.com</Contact>
+  <Url type="application/atom+xml" template="/cgi-bin/mt/mt-search.cgi?search={searchTerms}&amp;Template=opensearch"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="/_xml/opensearchdescription.xml"/>
+  <Url type="text/html" template="/cgi-bin/mt/mt-search.cgi?search={searchTerms}"/>
+  <Image height="16" width="16" type="image/x-icon">/_gfx/favicon.ico</Image>
+</OpenSearchDescription>

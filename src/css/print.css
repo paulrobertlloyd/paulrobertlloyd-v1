@@ -1,0 +1,39 @@
+/* --------------------------------------------------
+	Print Layout
+-------------------------------------------------- */
+#header,
+#article,
+#aside,
+#footer {
+	padding:0.75em 0;
+	clear:left;
+}
+#article img {
+	border-color:#fff;
+}
+#aside {
+	padding-left:14em;
+	}
+	#aside h2#remarks,
+	#aside h2#preview {
+		border:0 none;
+	}
+
+#navigation,
+div.entry-more,
+div.entry-navigation,
+#footer form,
+form#comments-form,
+h2#add-remarks,
+p#comment-greeting {
+	display:none;
+}
+
+div.figure,
+div.entry-location,
+div.entry-photos {
+	margin-left:0;
+}
+div.figure .sidenote {
+	margin:0 0 0 -14em;
+}

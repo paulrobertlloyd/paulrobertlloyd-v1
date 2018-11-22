@@ -1,0 +1,25 @@
+<mt:BlogParentWebsite><mt:WebsiteID setvar="website_id"/></mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+    <title>Tags &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" section="archive" blog_id="$website_id"/>
+
+    <div id="article">
+        <div class="section">
+            <div class="breadcrumb">
+                <a href="/archive/">Archive</a>
+            </div>
+            <h1>Tags</h1>
+            <ul class="tags"><mt:Tags include_blogs="children">
+                <li class="rank-<$mt:TagRank max="5"$>"><a href="/tags/<mt:TagName encode_url="1" normalize="1"/>" rel="tag"><mt:TagName normalize="1"/></a></li>
+            </mt:Tags></ul>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

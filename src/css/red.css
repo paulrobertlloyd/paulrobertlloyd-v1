@@ -1,0 +1,72 @@
+body {
+	background-color:#ae0000;
+}
+
+/* --------------------------------------------------
+	Links
+-------------------------------------------------- */
+#article a {
+	color:#b00;
+}
+a:hover {
+	color:#f00!important;
+	text-decoration:underline;
+	}
+	a:hover img {
+		background-color:#c00!important;
+	}
+a:active {
+	color:#c00!important;
+	}
+	a:active img {
+		background-color:#900!important;
+	}
+
+/* --------------------------------------------------
+	Buttons
+-------------------------------------------------- */
+input.submit {
+	background:#600 url(_gfx/button.png) no-repeat left top;
+	outline:1px solid #300;
+	}
+	input.button:hover {
+		color:#fff;
+		text-shadow:#600 0 -1px 0;
+		background-color:#a00;
+		outline-color:#300;
+	}
+	input.button:active {
+		text-shadow:#300 0 -1px 0!important;
+		background:#900 url(_gfx/button.png) no-repeat right bottom!important;
+		outline-color:#300!important;
+	}
+
+/* --------------------------------------------------
+	Footer
+-------------------------------------------------- */
+#footer {
+	background:#ae0000 url(_gfx/footer-red.png) repeat-x center 0;
+	}
+	#footer div.section {
+		background:url(_gfx/footer-section-red.png) no-repeat center 0;
+	}
+	#footer input {
+		border-color:#300;
+	}
+	#footer input.button:hover {
+		outline-color:#300;
+	}
+	#footer p.boilerplate,
+	#footer p.boilerplate a {
+		color:#300;
+	}
+	#footer p.boilerplate a:hover {
+		color:#100!important;
+	}
+
+/* --------------------------------------------------
+	Pagination
+-------------------------------------------------- */
+ul.pagination li a:hover {
+	border-color:#e00;
+}

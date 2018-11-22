@@ -1,0 +1,421 @@
+/* --------------------------------------------------
+	Classes
+-------------------------------------------------- */
+.hide { display:none; }
+.left { float:left; }
+.right { float:right; }
+	
+/* --------------------------------------------------
+	Icons
+-------------------------------------------------- */
+ul.social-icons {
+	float:left;
+	overflow:visible;
+	}
+	ul.social-icons li {
+		margin-right:1em;
+		margin-bottom:0.75em;
+		width:10em;
+		float:left;
+	}
+.icon {
+	padding-left:2em;
+	}
+	li.icon {
+		list-style:none;
+		margin-left:0;
+	}
+
+	/* blue */
+	.tumblr { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 0;}
+	.twitter { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -70px;}
+	.linkedin { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -140px;}
+	.google-talk { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -210px;}
+	.skype { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -280px;}
+	.foursquare { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -350px;}
+	.website { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -420px;}
+	.itunes { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -490px;}
+	.pinboard { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -560px;}
+	.viddler { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -630px;}
+	.digg { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -700px;}
+	.paypal { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -770px;}
+	.facebook { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -840px;}
+	.github { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -910px;}
+	.lanyrd { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -980px;}
+	.bbcid { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -1050px;}
+	.formspring { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -1120px;}
+	.vimeo { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -1190px;}
+	.reddit { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -1260px;}
+	.orkut { background:url(_gfx/social_icons_16_blue.png) no-repeat 0 -1330px;}
+
+	/* green */
+	.myspace { background:url(_gfx/social_icons_16_green.png) no-repeat 0 0;}
+	.amazon { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -70px;}
+	.readernaut { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -140px;}
+	.creativecommons { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -210px;}
+	.messenger { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -280px;}
+	.newsvine { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -350px;}
+	.sharethis { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -420px;}
+	.netvibes { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -490px;}
+	.vcard { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -560px;}
+	.fireeagle { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -630px;}
+	.zootool { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -700px;}
+	.spotify { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -770px;}
+	.stumbleupon { background:url(_gfx/social_icons_16_green.png) no-repeat 0 -840px;}
+
+	/* red */
+	.yahoo { background:url(_gfx/social_icons_16_red.png) no-repeat 0 0;}
+	.yahoo-messenger { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -70px;}
+	.getsatisfaction { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -140px;}
+	.upcoming { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -210px;}
+	.meetup { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -280px;}
+	.identica { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -350px;}
+	.aim { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -420px;}
+	.mixx { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -490px;}
+	.geotag { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -560px;}
+	.youtube { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -630px;}
+	.lastfm { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -700px;}
+	.yelp { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -770px;}
+	.nikeplus { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -840px;}
+	.bebo { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -910px;}
+	.dribbble { background:url(_gfx/social_icons_16_red.png) no-repeat 0 -980px;}
+
+	/* white */
+	.google { background:url(_gfx/social_icons_16_white.png) no-repeat 0 0;}
+	.dopplr { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -70px;}
+	.delicious { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -140px;}
+	.flickr { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -210px;}
+	.picasa { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -280px;}
+	.openid { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -350px;}
+	.email { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -420px;}
+	.huffduffer { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -490px;}
+	.ffffound { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -560px;}
+	.wikipedia { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -630px;}
+	.xing { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -700px;}
+	.xbox { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -770px;}
+	.slideshare { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -840px;}
+	.twitter-retweet { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -910px;}
+	.plancast { background:url(_gfx/social_icons_16_white.png) no-repeat 0 -980px;}
+
+	/* yellow */
+	.ember { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 0;}
+	.gowalla { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -70px;}
+	.ilike { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -140px;}
+	.feed { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -210px;}
+	.imdb { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -280px;}
+	.posterous { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -350px;}
+	.ebay { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -420px;}
+	.digg-this { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -490px;}
+	.goodreads { background:url(_gfx/social_icons_16_yellow.png) no-repeat 0 -560px;}
+
+a.feed,
+.action {
+	padding-left:15px;
+	}
+	a.rss { background:url(_gfx/feed_rss.gif) no-repeat 2px center; }
+	a.kml { background:url(_gfx/feed_kml.gif) no-repeat 2px center; }
+
+a.zip {
+	padding:0.25em 0 0.25em 2em;
+	background:url(_gfx/zip.gif) no-repeat 2px center!important;
+}
+
+.entry-remarks {
+	background:url(_gfx/a.gif) no-repeat 0 0;
+	padding-left:15px;
+}
+.entry-category {
+	background:url(_gfx/a.gif) no-repeat 0 -18px;
+	padding-left:15px;
+}
+p#comment-greeting {
+	background:url(_gfx/a.gif) no-repeat 0 -36px;
+	padding-left:21px;
+}
+.entry-canonical {
+	background:url(_gfx/a.gif) no-repeat 0 -54px;
+	padding-left:15px;
+}
+#article .entry-canonical a {
+	color:#888;
+	font-weight:normal;
+}
+
+/* --------------------------------------------------
+	hAtom
+-------------------------------------------------- */
+/* Common */
+.hentry {
+	list-style:none;
+	position:relative;
+}
+.hentry ul.entry-meta li {
+	color:#888;
+	list-style:none;
+	margin:0 1em 0 0;
+	}
+	.hentry ul.entry-meta li a,
+	.hentry ul.entry-meta li span {
+		font-size:0.9167em;
+		line-height:1.64;
+		}
+		.hentry ul.entry-meta li.entry-category a {
+			font-weight:normal;
+		}
+		.hentry abbr.published,
+		.hentry li.folder span {
+			letter-spacing:normal;
+			margin:0;
+			position:absolute;
+			top:0; left:0;
+		}
+
+/* Entry */
+div.hentry {}
+	div.hentry ul.entry-meta {
+		border-top:1px solid #d0d0d0;
+		border-bottom:1px solid #d0d0d0;
+		margin:0;
+		padding:0.75em 0 0.6667em;
+		width:100%;
+		overflow:auto;
+		}
+		div.hentry ul.entry-meta li {
+			margin-right:1.25em;
+			float:left;
+		}
+		div.hentry ul.entry-meta li abbr.published {
+			font-weight:bold;
+			position:static;
+		}
+	p.entry-tags {
+		color:#999;
+		font-size:0.9167em;
+		line-height:1.64;
+		margin:0.8182em 0;
+		}
+		p.entry-tags span {
+			font-weight:bold;
+		}
+		p.entry-tags a {
+			font-weight:normal;
+		}
+	p.entry-more,
+	p.entry-navigation {
+		border-top:1px solid #ddd;
+		margin-left:-12em;
+		padding:0.6667em 0 0.75em 12em;
+		width:50em; width:41em;
+		overflow:auto;
+		clear:left;
+		}	
+		p.entry-navigation span {
+			color:#888;
+			font-size:0.9167em;
+			line-height:1.64;
+			text-transform:uppercase;
+			padding-right:1.0909em;
+			width:10.9090em;
+			margin-left:-13.0909em;
+			clear:left;
+			float:left;
+		}
+		div.entry-discussion h4,
+		div.entry-photos h4,
+		div.entry-related h4 {
+			text-transform:uppercase;
+		}
+		div.entry-discussion,	
+		div.entry-photos,
+		div.entry-related {
+			border-top-style:solid;
+			}
+			div.entry-photos img {
+				height:60px; width:60px;
+			}
+			div.entry-photos p.caption {
+				margin-top:1.3636em;
+				clear:left;
+			}
+			div.entry-related ul {
+				width:43em;
+				margin:0;
+			}
+			div.entry-related li {
+				list-style:none;
+				margin:0 1em 0.75em 0;
+				padding:0;
+				width:13em;
+				float:left;
+			}
+			div.entry-discussion h5,
+			div.entry-related h5 {
+				margin-top:0;
+			}
+			div.entry-discussion p {
+				margin-top:0.75em;
+			}
+
+/* Entry Summary */
+ul.hfeed li.hentry {
+		margin-left:-12em;
+	}
+	ul.hfeed li.hentry h2.entry-title {
+		padding-left:9em;
+	}
+	ul.hfeed li.hentry ul.entry-meta {
+		margin:0;
+	}
+	ul.hfeed li.hentry abbr.published,
+	ul.hfeed li.hentry li.folder span {
+		color:#aaa;
+		font:1.333em/1.125 "Helvetica Neue Light","HelveticaNeue-Light","Helvetica Neue",Arial,Helvetica,sans-serif;
+	}
+	ul.hfeed li.hentry div {
+		margin:1.5em 0 3em 12em;
+		width:41em;
+	}
+	ul.hfeed li.hentry div p.entry-remarks {
+		font:normal 0.9167em/1.64 'Helvetica Neue',Arial,Helvetica,sans-serif;
+		margin:0.8182em 0;
+	}
+
+/* Entry Listing */
+div.hfeed li.hentry {
+	margin:0 0 0 -3em;
+	padding:0 0 0 3em;
+	}
+	div.hfeed li.hentry abbr.published {
+		color:#aaa;
+		font-size:1em;
+		line-height:1.5em;
+		width:3em;
+		display:block;
+	}
+
+/* --------------------------------------------------
+	Remark
+-------------------------------------------------- */
+div.remark {
+	border-top:1px solid #ccc;
+	margin:0.75em 0 1.4167em -12em;
+	padding-left:12em;
+	width:41em;
+	min-height:7.5em;
+	position:relative;
+	}
+	div.remark:after {
+		content:"."; 
+		display:block; 
+		height:0; 
+		clear:both; 
+		visibility:hidden;
+	}
+	div.remark .comment {
+		/*width:29em;*/
+		float:left;
+		}
+		div.remark .comment * {
+			margin:0.75em 0;
+		}
+		div.remark .comment li {
+			margin:0 0 0 1.5em;
+		}
+	div.remark p.commentator {
+		margin:0.75em 0 0 0;
+		padding-left:3em;
+		width:8em;
+		position:absolute;
+		left:0; top:0;
+		}
+		div.remark p.commentator abbr,
+		div.remark p.commentator strong {
+			font-size:0.9167em;
+			line-height:1.64;
+			letter-spacing:normal;
+			text-transform:capitalize;
+		}
+		div.remark p.commentator strong {
+			text-overflow:ellipsis;
+			white-space:nowrap;
+			width:8.7272em;
+			display:block;
+			overflow:hidden;
+		}
+		div.remark p.commentator img.gravatar {
+			border:1px solid #333;
+			padding:0;
+			position:absolute;
+			top:0.5em; left:0;
+		}
+
+/* --------------------------------------------------
+	Action Stream
+-------------------------------------------------- */
+ul.stream {
+	margin-bottom:3em;
+	}
+	li.action {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	li.action p,
+	li.action h4,
+	li.action div.thumbnails {
+		padding:0 0 0 2em;
+	}
+	li.action blockquote {
+		margin:0;
+		}
+		li.action blockquote p.cite {
+			text-align:left;
+			padding-left:0.5em;
+		}
+	li.action img {
+		margin:0.75em 0;
+	}
+	li.action abbr.published {
+		color:#999;
+		font-size:0.9168em;
+		letter-spacing:normal;
+		line-height:1.64;
+		margin:0.8182em 0;
+		display:inline;
+		position:static;
+	}
+
+/* Last.fm */
+li.lastfm ul li.lastfm {
+	background:url(_gfx/service_lastfm_track.gif) no-repeat 0 center;
+	margin-left:0;
+	padding-left:1.5em;
+}
+
+/* Flickr */
+li.action div.thumbnails {
+	margin:1.5em 0;
+	width:39em;
+	overflow:auto;
+	}
+	li.action div.thumbnails img {
+		margin-top:0;
+		margin-right:0.333em;
+		height:68px; width:68px;
+		float:left;
+	}
+	li.action div.thumbnails div.more {
+		width:39em;
+		float:left;
+	}
+	li.action div.thumbnails p {
+		padding:0;
+	}
+	
+/* --------------------------------------------------
+	More
+-------------------------------------------------- */
+p.more {
+	text-align:right;
+	margin-top:-0.75em;
+}

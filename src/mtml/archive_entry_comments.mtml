@@ -1,0 +1,30 @@
+<mt:BlogParentWebsite> 
+    <mt:WebsiteID setvar="website_id"/> 
+</mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+<mt:EntryPrevious><link rel="bookmark prev" href="<mt:EntryPermalink replace=".php",""/>" title="<mt:EntryTitle encode_html="1"/>"/></mt:EntryPrevious>
+<link rel="bookmark canonical" href="<mt:EntryPermalink replace=".php",""/>" title="<mt:EntryTitle encode_html="1"/>"/>
+<mt:EntryNext><link rel="bookmark next" href="<mt:EntryPermalink replace=".php",""/>" title="<mt:EntryTitle encode_html="1"/>"/></mt:EntryNext>
+<link rel="shortlink" href="http://prlloyd.com/e/<mt:EntryID/>" type="text/html"/>
+<title><mt:EntryTitle encode_html="1"/> &#8212; <mt:BlogParentWebsite><mt:WebsiteName/></mt:BlogParentWebsite></title>
+<script type="text/javascript" src="/_js/mt.js"></script>
+</head>
+
+<mt:Include module="Header" blog_id="$website_id"/>
+
+<div id="article" class="hfeed">
+<div class="section">
+<div class="breadcrumb">
+<a href="<mt:EntryPermalink replace=".php",""/>"><mt:EntryTitle encode_html="1" smarty_pants="1" widont="1"/></a>
+</div>
+<h1>Discuss</h1>
+<mt:Include module="Comments"/>
+</div>
+
+<!--/.section-->
+</div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

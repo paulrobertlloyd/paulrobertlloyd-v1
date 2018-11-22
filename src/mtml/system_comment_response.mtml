@@ -1,0 +1,32 @@
+<mt:BlogParentWebsite> 
+    <mt:WebsiteID setvar="website_id"/> 
+</mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:If name="comment_confirmation">
+<mt:Var name="page_title" value="Confirmation"/>
+<mt:Var name="message" value="Your remark has been submitted!"/>
+<mt:Else name="comment_pending">
+<mt:Var name="page_title" value="Thank You for Commenting"/>
+<mt:Var name="message" value="Your remarks have been received and held for approval by the blog owner."/>
+<mt:Else name="comment_error">
+<mt:Var name="page_title" value="Comment Submission Error"/>
+<mt:SetVarBlock name="message">Your remark submission failed for the following reasons: <mt:ErrorMessage/></mt:SetVarBlock>
+</mt:If>
+<title><mt:Var name="page_title"/> &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" blog_id="$website_id"/>
+
+<div id="article">
+<div class="section">
+<h1><mt:Var name="page_title"/></h1>
+<p class="lede"><mt:Var name="message"/></p>
+<p>Return to the <a href="<mt:If name="comment_error">javascript:history.back()<mt:Else><mt:EntryLink/></mt:If>">original entry</a>.</p>
+</div>
+
+<!--/.section-->
+</div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

@@ -1,0 +1,21 @@
+<mt:BlogParentWebsite> 
+    <mt:WebsiteID setvar="website_id"/> 
+</mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<title>Page Not Found &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header"/>
+
+<div id="article">
+<div class="section">
+<h1 id="page-title">Page Not Found</h1>
+<p class="lede"><mt:ErrorMessage/></p>
+</div>
+
+<!--/.section-->
+</div>
+
+<!--#article-->
+
+<mt:Include module="Footer"/>

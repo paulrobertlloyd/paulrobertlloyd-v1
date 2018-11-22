@@ -1,0 +1,92 @@
+<mt:BlogParentWebsite><mt:WebsiteID setvar="website_id"/></mt:BlogParentWebsite>
+<mt:setvar name="main_index" value="1">
+<mt:setvar name="mt_author_display_name" value="Paul Robert Lloyd">
+<mt:setvar name="author_short_name" value="Paul">
+<mt:setvar name="past_days" value="30">
+<mt:SetVarBlock name="today_date"><mt:date format="%B %e"></mt:SetVarBlock>
+<mt:SetVarBlock name="name_regex">/<mt:var name="mt_author_display_name">/</mt:SetVarBlock>
+<mt:SetVarBlock name="track_regex">/<mt:var name="mt_author_display_name"> listened to/</mt:SetVarBlock>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+    <title>Elsewhere &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" section="elsewhere" blog_id="$website_id"/>
+
+    <div id="article">
+        <div class="section">
+            <h1>Elsewhere</h1>
+            <mt:ActionStreams display_name="$mt_author_display_name" days="$past_days">
+                <mt:SetVarBlock name="stream_service"><mt:var name="service_type"/></mt:SetVarBlock>
+                <mt:SetVarBlock name="thumb_url"><mt:StreamActionThumbnailURL/></mt:SetVarBlock>
+
+                <mt:DateHeader>
+                    <mt:SetVarBlock name="this_date"><mt:StreamActionDate format="%B %e"></mt:SetVarBlock>
+                    <h2><mt:If var="this_date" eq="$today_date">Today<mt:Else><mt:Var name="this_date"/></mt:If></h2>
+                    <ul class="stream">
+                    <mt:SetVarBlock name="lastfmlist"></mt:SetVarBlock>
+                    <mt:Var name="lastfm-counter" value="0" />
+                    <mt:SetVarBlock name="photolist"></mt:SetVarBlock>
+                    <mt:SetVarBlock name="photolist_more"></mt:SetVarBlock>
+                    <mt:Var name="photo-counter" value="0" />
+                </mt:DateHeader>
+
+                <mt:If name="stream_type" eq="recent">
+                    <mt:SetVarBlock name="lastfmlist">
+                        <li class="action lastfm"><a href="<mt:StreamActionURL/>"><mt:StreamAction regex_replace="$track_regex",""/></a> <abbr class="published" title="<mt:StreamActionDate format_name="iso8601"/>"><mt:StreamActionDate format="%H:%M"/></abbr></li>
+                        <mt:Var name="lastfmlist">
+                        <mt:SetVar name="lastfm-counter" op="++" />
+                    </mt:SetVarBlock>
+                    <mt:ElseIf name="stream_type" eq="photos">
+                    <mt:If name="photo-counter" lt="6">
+                    <mt:SetVarBlock name="photolist">
+                        <a href="<mt:StreamActionURL/>"><img src="<mt:StreamActionThumbnailURL replace="_t","_s" />" alt=""/></a>
+                        <mt:Var name="photolist">
+                    </mt:SetVarBlock>
+                    <mt:Else>
+                    <mt:SetVarBlock name="photolist_more">
+                        <a href="<mt:StreamActionURL/>"><img src="<mt:StreamActionThumbnailURL replace="_t","_s" />" alt=""/></a>
+                        <mt:var name="photolist_more">
+                    </mt:SetVarBlock>
+                    </mt:If>
+                    <mt:SetVar name="photo-counter" op="++" />
+                    <mt:Else>
+                    <li class="action">
+                        <p class="<mt:Var name="service_type"/>">
+                        <mt:If name="service_type" eq="twitter">
+                            <mt:var name="author_short_name"> <a href="<$MTStreamActionURL$>">tweeted</a>, <q><$MTStreamActionTitle$></q> <abbr class="published" title="<mt:StreamActionDate format_name="iso8601"/>"><mt:StreamActionDate format="%H:%M"/></abbr>
+                        <mt:Else>
+                            <mt:StreamAction regex_replace="$name_regex","$author_short_name"> <abbr class="published" title="<mt:StreamActionDate format_name="iso8601"/>"><mt:StreamActionDate format="%H:%M"/></abbr>
+                            <mt:If name="thumb_url">
+                                <p><a href="<mt:StreamActionURL/>"><img class="photo" src="<mt:StreamActionThumbnailURL replace="_t","_m" />" /></a></p>
+                            </mt:If>
+                        </mt:If>
+                        </p>
+                    </li>
+                </mt:If>
+
+                <mt:DateFooter>
+                        <mt:If name="lastfmlist"><li class="action lastfm-tracks">
+                            <h4 class="lastfm"><mt:Var name="author_short_name"> listened to <mt:var name="lastfm-counter" /> songs</h4>
+                            <ul class="tracklisting">
+                                <mt:var name="lastfmlist">
+                            </ul>
+                        </li></mt:If>
+                        <mt:If name="photolist"><li class="action flickr-photos">
+                            <h4 class="flickr"><mt:Var name="author_short_name"> posted <mt:var name="photo-counter" /> photos</h4>
+                            <div class="thumbnails">
+                                <mt:Var name="photolist">
+                                <mt:If name="photolist_more"><div class="more"><mt:Var name="photolist_more"></div></mt:If>
+                            </div>
+                        </li></mt:If>
+                    </ul>
+                </mt:DateFooter>
+            </mt:ActionStreams>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

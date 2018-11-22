@@ -1,0 +1,28 @@
+<mt:BlogParentWebsite><mt:WebsiteID setvar="website_id"/></mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+    <title>Articles &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" section="articles" blog_id="$website_id"/>
+
+    <div id="article" class="hfeed">
+        <div class="section">
+            <h1>Articles</h1>
+            <p class="lede">A selection of interesting essays and research written at college and university.</p>
+            <mt:Folders>
+            <mt:SetVarBlock name="parentfolder"><mt:ParentFolder><mt:FolderLabel /></mt:ParentFolder></mt:SetVarBlock>
+            <mt:If var="parentfolder" eq="Articles">
+            <h2><a href="<mt:BlogURL/><mt:FolderPath/>"><mt:FolderLabel/></a></h2>
+            <p><a href="<mt:BlogURL/><mt:FolderPath/>"><img class="left" src="/_gfx/articles/<mt:FolderBasename/>/index.png" alt=""/></a><mt:FolderDescription/></p>
+            <p class="more"><a href="<mt:BlogURL/><mt:FolderPath/>">Read &#8216;<mt:FolderLabel />&#8217;</a> &#8594;</p>
+            </mt:If>
+            </mt:Folders>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

@@ -1,0 +1,47 @@
+Multi-Channel Competition
+=========================
+
+  By Paul Robert Lloyd
+  <http://paulrobertlloyd.com/articles/dissertation/multi-channel_competition>  
+  Thursday, 2 December 2010
+
+Unlike their analogue variants, digital satellite and cable services introduced a new method of browsing their greater number of channels: the EPG (Electronic Programme Guide). This allowed the viewer to browse channels and gain information about other programmes being shown, as well as browse channels by genre i.e. entertainment, sport, arts etc. Now audiences could watch television on a programme by programme basis rather than be dictated by channel schedules.
+
+This saw idents, end credits and other programme junctions being increasingly used to promote programmes. Channel 4 was the first to do so, using the right hand quarter of screen displaying the channel's logo with information about forthcoming programmes or programme related material that could be purchased whilst the end credits rolled. ([Figure 20](#fig20))
+
+This information in the past tended to be shown at the end of a programme. In addition, late 2001 saw channels start to use programme junctions and their associated idents to not only display information about what channel you were watching, but also contained menus (before only seen in separate promotions, or when there had been schedule changes), detailing up-coming programmes. ([Figure 21](#fig21))
+
+<div class="figure divide" id="fig20">
+	<div class="sidenote">
+		<h4><em>Figure 20</em> &#160; 'End Credit Promotions'</h4>
+	</div>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig20a.png" width="237" height="138" alt="ITV End Credit Promotion" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig20b.png" width="237" height="138" alt="Channel 4 End Credit Promotion" />
+	<p class="caption">&#9650; 'End Credit Promotions' (ECPs) became a new trend in keeping viewers tuned to a particular channel.</p>
+</div>
+
+<div class="figure divide" id="fig21">
+	<div class="sidenote">
+		<h4><em>Figure 21</em></h4>
+	</div>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig21a.png" width="237" height="138" alt="Channel 4 Programme Menu" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig21b.png" width="237" height="138" alt="BBC2 Programme Menu" />
+	<p class="caption">&#9650; Menus shown prior to programmes.</p>
+</div>
+
+In November 2001, <abbr>BBC2</abbr> updated its ten-year-old idents, for which such menus were an integral part. Although the original and subsequent sets of idents contained the viridian colour branding, it was not compulsory, and later idents started not to feature the colour--for those that did the colour appeared in different places. The new idents involved giving the channel consistent co-ordinated colours--a white 2 on a deep yellow backdrop, as well as a single four note jingle that could be subtly adapted. Also nation specific idents have been designed--currently in Northern Ireland only, were part of the evening schedule is changed from the rest of the UK's to suit it's local audience. The channel insignia was changed also to a purple rectangle positioned in the bottom right of the screen.
+
+<div class="figure divide" id="fig22">
+	<div class="sidenote">
+		<h4><em>Figure 22</em></h4>
+	</div>
+	<img class="photo left" src="/_gfx/articles/dissertation/fig22a.png" width="237" height="183" alt="" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig22b.png" width="112" height="84" alt="" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig22c.png" width="112" height="84" alt="" />
+	<img class="photo left" src="/_gfx/articles/dissertation/fig22d.png" width="112" height="84" alt="" />
+	<img class="photo" src="/_gfx/articles/dissertation/fig22e.png" width="112" height="84" alt="" />
+	<p class="caption">&#9650; The <abbr>BBC2</abbr> identity was radically changed after 10 years, using a standard and unaltered set of colour ways.</p>
+</div>
+
+This was all aimed to give the channel a more contemporary feel <q>retaining and reinforcing the wit and personality the 2s have already established, whilst presenting a new and refreshed image for <abbr>BBC2</abbr></q> (Wilkes, 2001). The first batch of idents featured the 2 bouncing, scaring of a shoal of mackerel, falling over like a domino, and growing a pair of robotic arms to turn round a portion of screen to reveal the <abbr>BBC2</abbr> logo. There was also a change to the way junctions were handled with the idents including now, next and later information to guide viewers through what they might like to watch.
+

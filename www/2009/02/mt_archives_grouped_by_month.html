@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Paul Robert Lloyd" />
+    <meta name="copyright" content="(c) 2008 Paul Robert Lloyd" />
+    <meta name="description" content="Paul Robert Lloyd is a Graphic Designer working with emerging technology start-ups, and delivering beautiful visual interface design, information architecture, HTML and CSS." />
+    <meta name="keywords" content="paul robert lloyd, apple, articles, design, film, graphic design, politics, society, television, travel, web design" />
+    <meta name="generator" content="Movable Type 5.031" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="country" content="gb" />
+    <meta name="language" content="en" />
+    <!--http://w3.org/2003/01/geo/-->
+    <meta name="geo:lat" content="52.64171" />
+    <meta name="geo:long" content="-1.98817" />
+    <!--http://dublincore.org/documents/dces/-->
+    <meta name="dc:title" content="Paul Robert Lloyd" />
+    <meta name="dc:creator" content="Lloyd, Paul Robert" />
+    <meta name="dc:subject" content="Apple; Articles; Design; Film; Graphic Design; Politics; Society; Television; Travel; Web Design" />
+    <meta name="dc:description" content="Paul Robert Lloyd is a Graphic Designer working with emerging technology start-ups, and delivering beautiful visual interface design, information architecture, HTML and CSS." />
+    <meta name="dc:format" content="application/xhtml+xml" />
+    <meta name="dc:identifier" content="(SCHEME=URL) http://v1.paulrobertlloyd.com/" />
+    <meta name="dc:rights" content="(SCHEME=URL) http://creativecommons.org/licenses/by-nc-nd/2.0/uk/" />
+    <meta name="dc:language" content="(SCHEME=ISO.639-2) eng" />
+    <!--css: style-->
+    <!--[if gte IE 7]>
+
+<!-->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/_css/screen.css" />
+    <!--<![endif]-->
+    <link rel="stylesheet" type="text/css" media="print" href="/_css/print.css" />
+    <!--js: behaviour-->
+    <script type="text/javascript" src="/_js/global.js"></script>
+    <!--rss: syndication-->
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/_xml/entries.xml" />
+    <!--opensearch-->
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Robert Lloyd" />
+    <!--icons-->
+    <link rel="icon" href="/_gfx/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/_gfx/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/_gfx/apple-touch-icon.png" type="image/png" />
+    <!--page specific-->
+    <link rel="bookmark prev" href="/2009/02/driven_to_design" title="Driven to Design" />
+    <link rel="bookmark canonical" href="/2009/02/mt_archives_grouped_by_month" title="Entry Archives, Grouped by Month in Movable Type" />
+    <link rel="bookmark next" href="/2009/02/sfo_lhr" title="SFO/LHR" />
+    <link rel="shortlink" type="text/html" href="http://prlloyd.com/e/203" />
+    <title>Entry Archives, Grouped by Month in Movable Type &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <header id="banner" role="banner">
+        <div>
+            <address id="paul-robert-lloyd" class="vcard">
+                <a class="url fn n" href="/" rel="home"><span class="given-name">Paul</span> <span class="additional-name">Robert</span> <span class="family-name">Lloyd</span></a> is a <span class="title">Visual Designer</span> at <a class="url org" href="http://clearleft.com/">Clearleft</a>, currently located somewhere near<br /><span class="adr">East Sussex, England</span>. </address>
+        </div>
+        <nav id="navigation" role="navigation">
+            <ul>
+                <li class="home"><a href="/">Home</a></li>
+                <li class="archive"><a href="/archive">Archive</a></li>
+                <li class="articles"><a href="/articles">Articles</a></li>
+                <li class="elsewhere"><a href="/elsewhere">Elsewhere</a></li>
+                <li class="about"><a href="/about">About</a></li>
+                <li class="subscribe"><a class="feed rss" href="/feed">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="article" class="hfeed">
+        <div class="section">
+            <div class="hentry" id="entry-203">
+                <h1 class="entry-title">Entry Archives, Grouped by Month in Movable Type</h1>
+                <ul class="entry-meta">
+                    <li><abbr class="published" title="2009-02-04T20:27:23+00:00"> 4 February 2009</abbr></li>
+                    <li class="entry-remarks"><a href="/2009/02/mt_archives_grouped_by_month/discuss">2 Remarks</a></li>
+                    <li class="entry-canonical"><a rel="shortlink" href="http://prlloyd.com/e/203" title="Short URL for this entry">http://prlloyd.com/e/203</a></li>
+                </ul>
+                <div class="entry-content">
+                    <p><img src="/_gfx/2009/02/archives.png" alt="Previous grouped by month published" title="" /></p>
+                    <p>I have been using Movable Type for a number of years, yet the template code required to present an archived list of entries, grouped by month has always evaded me. On many occassions I searched support forums and wikis looking for a solution the common concencus was that this was impossible to achieve without plug-ins and <a href="http://www.movable-type-weblog.com/archive/entry/grouping-a-list-of-entries-by-month.html">complicated logic</a>.</p>
+                    <p>However during the recent redesign of this site, another desparate search finally returned the answer. I&#8217;ve misplaced the link to the original solution, so as much for my benefit as maybe yours, here is the humble code:</p>
+                    <ol class="code">
+                        <li><code>&#60;h1&#62;Archive&#60;/h1&#62;</code></li>
+                        <li><code>&#60;mt:ArchiveList archive_type="Monthly"&#62;</code></li>
+                        <li class="tab1"><code>&#60;mt:Entries&#62;</code></li>
+                        <li><br /></li>
+                        <li class="tab2"><code>&#60;mt:EntriesHeader&#62;</code></li>
+                        <li class="tab3"><code>&#60;h2&#62;&#60;a href="&#60;mt:ArchiveLink/&#62;"&#62;</code></li>
+                        <li class="tab4"><code>&#60;mt:EntryDate format="%B %Y"$/&#62;</code></li>
+                        <li class="tab3"><code>&#60;/a&#62;&#60;/h2&#62;</code></li>
+                        <li class="tab3"><code>&#60;ul&#62;</code></li>
+                        <li class="tab2"><code>&#60;/mt:EntriesHeader&#62;</code></li>
+                        <li><br /></li>
+                        <li class="tab3"><code>&#60;li&#62;&#60;a href="&#60;mt:EntryPermalink/&#62;"&#62;</code></li>
+                        <li class="tab4"><code>&#60;mt:EntryDate format="%d"/&#62; - &#60;mt:EntryTitle/&#62;</code></li>
+                        <li class="tab3"><code>&#60;/a&#62;&#60;/li&#62;</code></li>
+                        <li><br /></li>
+                        <li class="tab2"><code>&#60;mt:EntriesFooter&#62;</code></li>
+                        <li class="tab3"><code>&#60;/ul&#62;</code></li>
+                        <li class="tab2"><code>&#60;/mt:EntriesFooter&#62;</code></li>
+                        <li><br /></li>
+                        <li class="tab1"><code>&#60;/mt:Entries&#62;</code></li>
+                        <li><code>&#60;/mt:ArchiveList&#62;</code></li>
+                    </ol>
+                    <p>This is the first time I&#8217;ve posted a chuck of code to my blog, yet in terms of Movable Type templates, it&#8217;s probably the last. Issues like this, as well as the fairly stagnent development of the platform and a dwindling community is no match against competing tools like <a href="http://wordpress.org">WordPress</a> and <a href="http://expressionengine.com">ExpressionEngine</a>&#8212;I&#8217;m pretty sure I will transition to one of these services before the end of the year.</p>
+                </div>
+                <p class="entry-tags">
+                    <span>Tagged:</span> <a href="/tags/movabletype" rel="tag">Movable Type</a>, <a href="/tags/webdevelopment" rel="tag">Web Development</a>
+                </p>
+                <div class="entry-discussion figure">
+                    <div class="sidenote">
+                        <h4>Discussion</h4>
+                    </div>
+                    <h5><a href="/2009/02/mt_archives_grouped_by_month/discuss">See the discussion on this article</a></h5>
+                    <p>2 remarks contributed</p>
+                </div>
+                <div class="entry-related figure">
+                    <div class="sidenote">
+                        <h4>Related Posts</h4>
+                    </div>
+                    <ul>
+                        <li>
+                            <h5><a href="/2004/09/unmovable_headache">Unmovable Headache</a></h5>
+                            <p>This blog continues to become more refined as I better understand the system that builds it, Movable Type.</p>
+                        </li>
+                        <li>
+                            <h5><a href="/2011/06/two_years">Two Years</a></h5>
+                            <p>Two years ago I joined Clearleft. Now with the responsive design movement in full swing, I look back over the last two years to see how much my approach to web design has changed.</p>
+                        </li>
+                        <li>
+                            <h5><a href="/2009/12/urls_matter">URLs Matter</a></h5>
+                            <p>The humble URL has been on my mind a lot recently.</p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="entry-navigation">
+                    <span>Previous</span> <a class="prev" href="/2009/02/driven_to_design">Driven to Design</a><br />
+                    <span>Next</span> <a class="next" href="/2009/02/sfo_lhr">SFO/LHR</a>
+                </p>
+            </div>
+            <!--/.hentry-->
+        </div>
+        <!--/.section-->
+    </div>
+    <!--/#article-->
+    <footer id="contentinfo" role="contentinfo">
+        <div>
+            <form method="get" action="/cgi-bin/mt/mt-search.cgi">
+                <fieldset>
+                    <input type="hidden" name="IncludeBlogs" value="1" />
+                    <input type="hidden" name="limit" value="20" />
+                    <input id="search" name="search" class="text search" type="text" value="" />
+                    <input class="button submit" type="submit" value="Search Site" />
+                </fieldset>
+            </form>
+            <small class="boilerplate"> The contents of this site are <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licenced</a> and &#169; <abbr title="2010">MMX</abbr> <a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a>.<br /> Powered by <a href="http://movabletype.org" rel="generator">Movable Type</a>. Hosted by <a href="http://mediatemple.net">(mt) mediatemple</a>. See the <a href="/about/colophon">colophon</a> for more details. </small>
+        </div>
+    </footer>
+</body>
+
+</html>

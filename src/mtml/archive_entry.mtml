@@ -1,0 +1,98 @@
+<mt:BlogParentWebsite> 
+    <mt:WebsiteID setvar="website_id"/> 
+</mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+<mt:EntryPrevious><link rel="bookmark prev" href="<mt:EntryPermalink replace=".php",""/>" title="<mt:EntryTitle encode_html="1"/>"/></mt:EntryPrevious>
+<link rel="bookmark canonical" href="<mt:EntryPermalink replace=".php",""/>" title="<mt:EntryTitle encode_html="1"/>"/>
+<mt:EntryNext><link rel="bookmark next" href="<mt:EntryPermalink replace=".php",""/>" title="<mt:EntryTitle encode_html="1"/>"/></mt:EntryNext>
+<link rel="shortlink" type="text/html" href="http://prlloyd.com/e/<mt:EntryID/>"/>
+<title><mt:EntryTitle encode_html="1"/> &#8212; <mt:BlogParentWebsite><mt:WebsiteName/></mt:BlogParentWebsite></title>
+</head>
+
+<mt:Include module="Header" blog_id="$website_id"/>
+
+<div id="article" class="hfeed">
+<div class="section">
+<div class="hentry" id="entry-<mt:EntryID/>">
+<h1 class="entry-title"><mt:EntryTitle encode_html="1" smarty_pants="1" widont="1"/></h1>
+<ul class="entry-meta">
+<li><abbr class="published" title="<mt:EntryDate format_name="iso8601"/>"><mt:EntryDate format="%e %B %Y"/></abbr></li>
+<mt:IfCommentsActive><li class="entry-remarks"><a href="<mt:EntryPermalink replace=".php",""/>/discuss"><mt:EntryCommentCount singular="1 Remark" plural="# Remarks" none="No Remarks"/></a></li></mt:IfCommentsActive>
+<li class="entry-canonical"><a rel="shortlink" href="http://prlloyd.com/e/<mt:EntryID/>" title="Short URL for this entry">http://prlloyd.com/e/<mt:EntryID/></a></li>
+</ul>
+<div class="entry-content">
+<mt:EntryBody smarty_pants="1" widont="1"/>
+<mt:EntryIfExtended><div id="more">
+<mt:EntryMore smarty_pants="1" widont="1"/>
+</div></mt:EntryIfExtended>
+</div>
+
+<mt:SetVarBlock name="tagged"><mt:EntryTags><mt:TagName/></mt:EntryTags></mt:SetVarBlock>
+<mt:If name="tagged"><p class="entry-tags">
+<span>Tagged:</span> <mt:EntryTags glue=", "><a href="/tags/<mt:TagName encode_url="1" normalize="1"/>" rel="tag"><mt:TagName/></a></mt:EntryTags>
+</p></mt:If>
+
+<mt:IfCommentsActive>
+<div class="entry-discussion figure">
+<div class="sidenote">
+<h4>Discussion</h4>
+</div>
+<mt:IfCommentsAccepted>
+<h5><a href="<mt:EntryPermalink replace=".php",""/>/discuss">Join the discussion on this article</a></h5>
+<p><mt:EntryCommentCount singular="1 remark" plural="# remarks" none="No remarks"/> contributed so far</p>
+<mt:Else>
+<h5><a href="<mt:EntryPermalink replace=".php",""/>/discuss">See the discussion on this article</a></h5>
+<p><mt:EntryCommentCount singular="1 remark contributed" plural="# remarks contributed" none="No remarks"/></p>
+</mt:IfCommentsAccepted>
+</div>
+</mt:IfCommentsActive>
+
+<mt:Ignore>
+<mt:SetVarBlock name="EntryID">paulrobertlloyd:post=<mt:EntryID/></mt:SetVarBlock>
+<mt:FlickrPhotos tags="$EntryID" username="Paul Robert Lloyd" lastn="1">
+<div class="entry-photos figure">
+<div class="sidenote">
+<h4>Related Photos</h4>
+</div>
+</mt:FlickrPhotos>
+<mt:FlickrPhotos tags="$EntryID" username="Paul Robert Lloyd" lastn="6">
+<a href="<mt:FlickrPhotoURL/>"><img class="left" src="<mt:FlickrPhotoThumb size="s"/>" alt="<mt:FlickrPhotoTitle/>"/></a>
+</mt:FlickrPhotos>
+<mt:FlickrPhotos tags="$EntryID" username="Paul Robert Lloyd" lastn="1">
+<a href="<mt:FlickrPhotoURL/>"><img src="<mt:FlickrPhotoThumb size="s"/>" alt="<mt:FlickrPhotoTitle/>"/></a>
+<p class="caption">You can view a number of <a href="http://www.flickr.com/photos/paulrobertlloyd/tags/paulrobertlloyd:post=<mt:EntryID/>">photos related to this post</a> on Flickr.</p>
+</div>
+</mt:FlickrPhotos>
+</mt:Ignore>
+
+<div class="entry-related figure">
+<div class="sidenote">
+<h4>Related Posts</h4>
+</div>
+<ul>
+<mt:RelatedEntries lastn="3">
+<li>
+<h5><a href="<mt:EntryPermalink replace=".php",""/>"><mt:EntryTitle encode_html="1" smarty_pants="1" widont="1"></a></h5>
+<p><mt:EntryExcerpt smarty_pants="1" widont="1"></p>
+</li>
+</mt:RelatedEntries>
+</ul>
+</div>
+
+<p class="entry-navigation">
+<mt:EntryPrevious><span>Previous</span> <a class="prev" href="<mt:EntryPermalink replace=".php",""/>"><mt:EntryTitle encode_html="1"/></a><br/></mt:EntryPrevious>
+<mt:EntryNext><span>Next</span> <a class="next" href="<mt:EntryPermalink replace=".php",""/>"><mt:EntryTitle encode_html="1"/></a></mt:EntryNext>
+</p>
+</div>
+
+<!--/.hentry-->
+
+</div>
+
+<!--/.section-->
+</div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

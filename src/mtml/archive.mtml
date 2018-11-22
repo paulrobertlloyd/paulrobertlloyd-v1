@@ -1,0 +1,54 @@
+<mt:BlogParentWebsite> 
+    <mt:WebsiteID setvar="website_id"/> 
+</mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+<mt:ArchivePrevious><link rel="prev" href="<mt:ArchiveLink/>" title="<$mt:ArchiveTitle/>"/></mt:ArchivePrevious>
+<mt:ArchiveNext><link rel="next" href="<mt:ArchiveLink/>" title="<$mt:ArchiveTitle/>"/></mt:ArchiveNext>
+<title><mt:ArchiveTitle/> &#8212; <mt:BlogParentWebsite><mt:WebsiteName/></mt:BlogParentWebsite></title>
+</head>
+
+<mt:Include module="Header" section="archive" blog_id="$website_id"/>
+
+<div id="article">
+<div class="section">
+<div class="breadcrumb">
+<a href="/archive/">Archive</a><mt:IfArchiveType type="Monthly"> / <a href="/<mt:ArchiveDate format="%Y"/>/"><mt:ArchiveDate format="%Y"/></a></mt:IfArchiveType>
+</div>
+<h1><mt:ArchiveTitle/></h1>
+
+<ul class="hfeed">
+<mt:Entries><mt:Include module="Entry Summary" blog_id="$website_id"/></mt:Entries>
+</ul>
+
+<mt:IfArchiveType type="Monthly">
+<mt:SetVarBlock name="ArchiveStart"><mt:ArchiveDate format="%Y-%m-01"/></mt:SetVarBlock>
+<mt:SetVarBlock name="ArchiveEnd"><mt:ArchiveDate format="%Y-%m-31"/></mt:SetVarBlock>
+<mt:FlickrPhotos min_taken_date="$ArchiveStart" max_taken_date="$ArchiveEnd" username="Paul Robert Lloyd" lastn="1">
+<div class="entry-photos figure">
+<div class="sidenote">
+<h4>Photos</h4>
+</div>
+</mt:FlickrPhotos>
+<mt:FlickrPhotos min_taken_date="$ArchiveStart" max_taken_date="$ArchiveEnd" username="Paul Robert Lloyd" lastn="7">
+<a href="<mt:FlickrPhotoURL/>"><img class="left" src="<mt:FlickrPhotoThumb size="s"/>" alt="<mt:FlickrPhotoTitle/>"/></a>
+</mt:FlickrPhotos>
+<mt:FlickrPhotos min_taken_date="$ArchiveStart" max_taken_date="$ArchiveEnd" username="Paul Robert Lloyd" lastn="1">
+<p class="caption">View all <a href="http://www.flickr.com/photos/paulrobertlloyd/archives/date-taken/<mt:ArchiveDate format="%Y"/>/<mt:ArchiveDate format="%m"/>/">photos taken during <mt:ArchiveDate format="%B %Y"/></a> on Flickr.</p>
+</div>
+</mt:FlickrPhotos>
+</mt:IfArchiveType>
+
+<p class="entry-navigation">
+<mt:ArchivePrevious><span>Previous:</span> <a class="prev" href="<mt:ArchiveLink/>"><mt:ArchiveTitle encode_html="1"/></a><br/></mt:ArchivePrevious>
+<mt:ArchiveNext><span>Next:</span> <a class="next" href="<mt:ArchiveLink/>"><mt:ArchiveTitle encode_html="1"/></a></mt:ArchiveNext>
+</p>
+
+</div>
+
+<!--/.section-->
+</div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>

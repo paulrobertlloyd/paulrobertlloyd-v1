@@ -1,0 +1,39 @@
+<mt:IfArchiveTypeEnabled archive_type="Individual">
+	<h3><mt:Date format="%B %Y"/></h3>
+	<table summary="Monthly Calendar With Links to Daily Posts">
+		<thead>
+			<tr>
+				<th abbr="Sunday">Sun</th>
+				<th abbr="Monday">Mon</th>
+				<th abbr="Tuesday">Tue</th>
+				<th abbr="Wednesday">Wed</th>
+				<th abbr="Thursday">Thu</th>
+				<th abbr="Friday">Fri</th>
+				<th abbr="Saturday">Sat</th>
+			</tr>
+		</thead>
+		<tbody>
+		<mt:Calendar>
+			<mt:CalendarWeekHeader><tr></mt:CalendarWeekHeader>
+				<td>
+				<mt:CalendarIfEntries><mt:Entries lastn="1"><a href="<mt:EntryPermalink/>"><mt:CalendarDay/></a></mt:Entries>
+				</mt:CalendarIfEntries>
+				<mt:CalendarIfNoEntries><mt:CalendarDay/></mt:CalendarIfNoEntries>
+				<mt:CalendarIfBlank>&#160;</mt:CalendarIfBlank>
+				</td>
+			<mt:CalendarWeekFooter></tr></mt:CalendarWeekFooter>
+		</mt:Calendar>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th abbr="Sunday">Sun</th>
+				<th abbr="Monday">Mon</th>
+				<th abbr="Tuesday">Tue</th>
+				<th abbr="Wednesday">Wed</th>
+				<th abbr="Thursday">Thu</th>
+				<th abbr="Friday">Fri</th>
+				<th abbr="Saturday">Sat</th>
+			</tr>
+		</tfoot>
+	</table>
+</mt:IfArchiveTypeEnabled>

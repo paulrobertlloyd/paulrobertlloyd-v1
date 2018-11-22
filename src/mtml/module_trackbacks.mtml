@@ -1,0 +1,22 @@
+<mt:IfPingsActive>
+<div id="trackbacks">
+	<h2><mt:EntryTrackbackCount singular="1 TrackBack" plural="# TrackBacks" none="No TrackBacks"/></h2>
+
+	<mt:IfPingsAccepted>
+	<p class="caption">TrackBack URL: <$mt:EntryTrackbackLink$></p>
+	</mt:IfPingsAccepted>
+
+	<mt:Pings>
+	<div id="ping-<$mt:PingID$>" class="remark">
+		<p class="commentator">
+			<strong><a href="<mt:PingURL/>"><mt:PingTitle/></a></strong><br/>
+			<mt:PingBlogName$><br/>
+			<mt:PingDate format="%l:%M %p"/>
+		</p>
+		<div class="trackback">
+			<mt:PingExcerpt/> <a href="<mt:PingURL/>">Read More</a>
+		</div>
+	</div>
+	</mt:Pings>
+</div>
+</mt:IfPingsActive>

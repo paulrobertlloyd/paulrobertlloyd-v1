@@ -1,0 +1,9 @@
+
+            <form method="get" action="<mt:CGIPath/><mt:SearchScript/>">
+                <fieldset>
+                    <mt:If name="search_results"><input type="hidden" name="IncludeBlogs" value="<mt:SearchIncludeBlogs/>"/><mt:Else><input type="hidden" name="IncludeBlogs" value="<mt:BlogID/>"/></mt:If>
+                    <input type="hidden" name="limit" value="<mt:SearchMaxResults/>"/>
+                    <input id="search" name="search" class="text search" type="text" value="<mt:SearchString/>"/>
+                    <input class="button submit" type="submit" value="Search<mt:If name="search_results"> Again<mt:Else> Site</mt:If>"/>
+                </fieldset>
+            </form>

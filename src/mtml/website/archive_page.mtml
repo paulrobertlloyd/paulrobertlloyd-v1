@@ -1,0 +1,47 @@
+<mt:SetVarBlock name="location"><mt:ParentFolder><mt:FolderLabel lower_case="1"/></mt:ParentFolder></mt:SetVarBlock>
+<mt:If var="location" ne="articles"><mt:Var name="location" value="about"/></mt:If>
+<mt:BlogParentWebsite><mt:WebsiteID setvar="website_id"/></mt:BlogParentWebsite>
+<mt:Include module="HTML Head" blog_id="$website_id"/>
+<mt:Include module="Debug" blog_id="$website_id"/>
+    <title><mt:PageTitle/> &#8212; <mt:BlogName/></title>
+</head>
+
+<mt:Include module="Header" section="$location" blog_id="$website_id"/>
+
+    <div id="article">
+        <div class="section">
+            <mt:If tag="PageBasename" ne="index"><div class="breadcrumb">
+                <mt:PageFolder><a href="<mt:BlogURL/><mt:FolderPath/>"><mt:FolderLabel/></a></mt:PageFolder>
+            </div></mt:If>
+
+            <h1><mt:PageTitle/></h1>
+            <p class="lede"><mt:PageExcerpt encode_html="1" smarty_pants="1" widont="1"/></p>
+            <mt:PageBody smarty_pants="1" widont="1"/>
+            <mt:PageMore smarty_pants="1" widont="1"/>
+
+            <mt:PageFolder><p class="entry-navigation">
+                <mt:SetVarBlock name="this_page"><a href="<mt:PagePermalink replace=".php",""/>"><mt:PageTitle></a></mt:SetVarBlock>
+                <mt:SetVar name="prev_page" value="">
+                <mt:Pages sort_by="authored_on" sort_order="ascend"> 
+                    <mt:SetVarBlock name="next_page"><a href="<mt:PagePermalink replace=".php",""/>"><mt:PageTitle></a></mt:SetVarBlock>
+                    <mt:If name="this_page" eq="$next_page">
+                    <mt:If name="prev_page"><span>Previous</span><mt:Var name="prev_page"><br/></mt:If>
+                    </mt:If>
+                    <mt:Var name="prev_page" value="$next_page">
+                </mt:Pages>
+                <mt:SetVarBlock name="this_page"><a href="<mt:PagePermalink replace=".php",""/>"><mt:PageTitle encode_html="1"></a></mt:SetVarBlock>
+                <mt:SetVar name="prev_page" value="">
+                <mt:Pages sort_by="authored_on" sort_order="ascend"> 
+                    <mt:SetVarBlock name="next_page"><a href="<mt:PagePermalink replace=".php",""/>"><mt:PageTitle encode_html="1"></a></mt:SetVarBlock>
+                    <mt:If name="prev_page" eq="$this_page"><span>Next</span> <mt:Var name="next_page"></mt:If>
+                    <mt:Var name="prev_page" value="$next_page">
+                </mt:Pages>
+            </p></mt:PageFolder>
+        </div>
+
+<!--/.section-->
+    </div>
+
+<!--/#article-->
+
+<mt:Include module="Footer" blog_id="$website_id"/>
